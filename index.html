@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </nav>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <svg id="lightning-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 3L3 14H10L9 21L19 10H12L13 3Z" fill="#FFA500" />
+            </svg>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work-experience">Experience</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo"> Maryam Atheeq </div>
+        <div class= "hamburger-menu">
+            <div class= "hamburger-icon" onclick="toggleMenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()">About</a></li>
+                <li> <a href="#work-experience" onclick="toggleMenu()">Experience</a></li>
+                <li> <a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro-section" class="intro-container">
+        <div class="intro-window">
+          <div class="intro-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="intro-content">
+            <p class="section__text_p1">Hello, I'm</p>
+            <h1 class="title"> Maryam Atheeq </h1>
+            <p class="section__text_p2 typing-text">Electrical Engineering Student<span class="cursor">|</span></p>
+            <!-- Add Flex Container for Robot and Buttons -->
+            <div class="flex-container">
+                <lottie-player
+                  src="https://lottie.host/44811d14-4797-4382-9d4e-141b02094cec/83kLt0EXQ5.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 200px; height: 200px;"
+                  loop
+                  autoplay>
+                </lottie-player>
+                <div class="tab">
+                  <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./Assets/Maryam_EE_Resume.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                  </div>
+                  <div id="socials-container">
+                    <img src="./Assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/in/maryam-atheeq'" />
+                    <img src="./Assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/maryamatheeq'" />
+                  </div>
+                </div>
+              </div>              
+      </section>
+    
+    <section id="about">
+        <p class="section__text_p1">Learn More</p>
+        <h1 class="title">About Me</h1>
+        <!-- Side-by-side GIF and Description below the cards -->
+        <div class="about-content">
+            <!-- GIF on the left side -->
+            <div class="giphy-container">
+                <img src="https://media.giphy.com/media/Cpaq8odLDnHkDlHK1V/giphy.gif" alt="GIF" class="giphy-gif">
+            </div>
+    
+            <!-- Description on the right side -->
+            <div class="about-description">
+                <div class="about-code-window">
+                    <div class="code-window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="about-popup">
+                        <!-- <p>Hi!</p> -->
+                        <p>
+                            I'm a third-year Electrical Engineering student who loves bringing creative ideas to life with a hands-on approach. 
+                            From building circuits to writing code, I'm always excited to take on new challenges and bring ideas to life. 
+                            My journey so far has been fueled by a curiosity for how things work and a passion for solving problems. 
+                        </p>
+                        <div class="fun-fact">
+                            <p class="fun-fact-text">
+                                <span class="fun-fact-label">Fun Fact:</span> I'm featured in the Guinness World Records for contributing to the world's largest mosaic! 🏆
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-containers">
+            <!-- Education Box -->
+            <div class="details-container">
+                <img src="./Assets/education.png" alt="Education Icon">
+                <h2>Education</h2>
+                <p>Memorial University of Newfoundland<br>Bachelor of Electrical Engineering<br>Class of 2027</p>
+            </div>
+            <!-- Awards & Scholarships Box -->
+            <div class="details-container">
+                <img src="./Assets/experience.png" alt="Awards Icon">
+                <h2>Awards & Scholarships</h2>
+                <p>Verafin Inc. Engineering Scholarship<br>PEGNL Bursary<br>FEAS High Achiever Entrance Scholarship<br>IUGS Entrance Scholarship</p>
+            </div>
+        </div>
+    
+        <!-- <img src="./Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href= './#experience '" /> -->
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience">
+        <p class="section__text_p1">Here's my</p>
+        <h1 class="title">Work Experience</h1>
+        <div class="work-experience-container">
+            <div class="work-item">
+                <div class="work-header">
+                    <h2 class="work-title">Electrical Engineering Intern</h2>
+                    <h3 class="work-company">Stantec Inc.</h3>
+                    <p class="work-duration">May - Aug 2025 | St. John's, NL</p>
+                </div>
+                <div class="work-description">
+                    <ul>
+                        <li>Collaborated with architects and engineers to design electrical systems for lighting and power distribution</li>
+                        <li>Performed circuit assignments, lighting photometric calculations using AGi32, and short circuit studies (ETAP) for projects</li>
+                        <li>Created single-line diagrams and developed Revit 3D models to support building system layouts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-header">
+                    <h2 class="work-title">Technical Project Lead</h2>
+                    <h3 class="work-company">Suncor Energy Fluvarium</h3>
+                    <p class="work-duration">Sep - Dec 2024 | St. John's, NL</p>
+                </div>
+                <div class="work-description">
+                    <ul>
+                        <li>Designed and developed models for small-scale vehicles using AutoCAD for precision design and 3D printing, while interfacing and programming Electronic Speed Controllers (ESCs), DC motors, and wireless communication modules (transmitters/receivers) to enable remote operation</li>
+                        <li>Led project management efforts by using project management tools, MS Excel and MS PowerPoint to oversee timelines, budgets, and sponsor deliverables</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-header">
+                    <h2 class="work-title">Co-op Engineering Student</h2>
+                    <h3 class="work-company">Tetra Society of North America</h3>
+                    <p class="work-duration">Jan - May 2024 | St. John's, NL</p>
+                </div>
+                <div class="work-description">
+                    <ul>
+                        <li>Designed an assistive shoe device and platform, including custom orthotics components using SolidWorks to improve mobility for a client with polio, ensuring functionality, durability and user-specific customization through iterative testing and refinement</li>
+                        <li>Collaborated with MUN Technical Services to apply advanced 3D printing techniques, optimizing prototyping methods to develop lightweight, durable solutions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-header">
+                    <h2 class="work-title">Front-End Developer</h2>
+                    <h3 class="work-company">Easy Receipt Inc.</h3>
+                    <p class="work-duration">Sep - Dec 2023 | St. John's, NL</p>
+                </div>
+                <div class="work-description">
+                    <ul>
+                        <li>Developed a front-end application using HTML, CSS and JavaScript to create a responsive and user-friendly interface while debugging and optimizing web performance</li>
+                        <li>Utilized Git for version control, including branching, merging, and resolving conflicts to ensure seamless team collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <p class="section__text_p1"> Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <span class="skill-icon">🏗️</span>
+                    <h3>Revit</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">📐</span>
+                    <h3>AutoCAD</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">💡</span>
+                    <h3>AGi32</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">⚡</span>
+                    <h3>Power Distribution</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🔆</span>
+                    <h3>Lighting Design</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🔬</span>
+                    <h3>Lab Equipment</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">📊</span>
+                    <h3>Simulink</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">⚙️</span>
+                    <h3>ETAP</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🖨️</span>
+                    <h3>3D Printing</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">📋</span>
+                    <h3>Project Management</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">💻</span>
+                    <h3>Assembly Language (C)</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🎨</span>
+                    <h3>Onshape</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🔌</span>
+                    <h3>PSpice</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">📈</span>
+                    <h3>MATLAB</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🔗</span>
+                    <h3>Circuit Design</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🌐</span>
+                    <h3>IoT</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🤖</span>
+                    <h3>Arduino UNO</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">📄</span>
+                    <h3>MS Office</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">✏️</span>
+                    <h3>CAD</h3>
+                </div>
+                <div class="skill-card">
+                    <span class="skill-icon">🔧</span>
+                    <h3>SolidWorks</h3>
+                </div>
+            </div>
+        </div>
+        <!-- <img 
+            src="./Assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href= './#projects'"
+        /> -->
+    </section>
+
+   <section id="projects">
+        <p class="section__text_p1">Dive into my</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-grid">
+<!-- First Row -->
+<div class="project-card">
+    <img src="./Assets/Snake Game.png" alt="Project One" class="project-img">
+    <h2 class="experience-sub-title project-title">Slither and Score</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/Snake-Game-'">
+            Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://slitherandscore.netlify.app/'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/Tic Tac Toe.jpg" alt="Project Two" class="project-img">
+    <h2 class="experience-sub-title project-title">Classic Tic Tac Toe</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/Tic-Tac-Toe'">
+            Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://classictictac.netlify.app/'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/To Do List.png" alt="Project Three" class="project-img">
+    <h2 class="experience-sub-title project-title">Task Tracker</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/To-Do-List'">
+            Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://tasklisttrack.netlify.app/'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<!-- Second Row -->
+<div class="project-card">
+    <img src="./Assets/Calculator.png" alt="Project Four" class="project-img">
+    <h2 class="experience-sub-title project-title">QuickCalc</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/Caculator-App-HTML-CSS-JS'">
+            Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://quickcalcu.netlify.app/'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/Greenhouse.png" alt="Project Five" class="project-img">
+    <h2 class="experience-sub-title project-title">Arduino Plant Monitor</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/Arduino-Greenhouse-Monitoring-System'">
+            Github
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/Heart Rate.png" alt="Project Six" class="project-img">
+    <h2 class="experience-sub-title project-title">Pulse Tracker with Arduino</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq'">
+            Github
+        </button>
+    </div>
+</div>
+<!-- Third Row -->
+<div class="project-card">
+    <img src="./Assets/Smart Security Light System.jpg" alt="Security Light System" class="project-img">
+    <h2 class="experience-sub-title project-title">Security Light System</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/maryamatheeq/Security-Light-System'">
+            Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/QGyNjchHbtQ'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/Prosthetic Hand.png" alt="Prosthetic Hand" class="project-img">
+    <h2 class="experience-sub-title project-title">Prosthetic Hand</h2>
+    <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/BSOiwGAesNg'">
+            Live Demo
+        </button>
+    </div>
+</div>
+<div class="project-card">
+    <img src="./Assets/RC Boat.jpg" alt="Remote-Controlled Boat" class="project-img">
+    <h2 class="experience-sub-title project-title">Remote-Controlled Boat</h2>
+</div>
+    <!-- <img 
+        src="./Assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href= './#contact'"
+        /> -->
+    </section>
+
+    <section id="contact">
+        <p class="section__text_p1">Let's Connect!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <!-- Email -->
+            <div class="contact-info-container">
+                <img 
+                    src="./Assets/email.png" 
+                    alt="Email icon" 
+                    class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">matheequrrah@mun.ca</a></p>
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-info-container">
+                <img 
+                    src="./Assets/linkedin.png" 
+                    alt="LinkedIn icon" 
+                    class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/maryam-atheeq">maryam_atheeq</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class=" nav-links">
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#experience">Skills</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169 2025 Maryam Atheeq. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
