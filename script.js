@@ -34,7 +34,7 @@ function toggleMenu() {
 
 
     document.addEventListener("DOMContentLoaded", () => {
-        const sections = document.querySelectorAll("section");
+        const sections = document.querySelectorAll("section:not(#projects)");
     
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {

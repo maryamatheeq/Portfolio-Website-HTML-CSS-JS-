@@ -360,6 +360,8 @@ article .icon{
 
 #projects{
     position: relative;
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 .color-container{
@@ -646,24 +648,26 @@ footer p{
 
     .details-container {
         width: 100%;
-        max-width: 350px;
+        max-width: 280px;
         margin: 0 auto;
-        min-height: 180px;
-        padding: 1.5rem;
+        min-height: 140px;
+        padding: 1rem;
     }
     
     .details-container img {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 1rem;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.8rem;
     }
     
     .details-container h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
     }
     
     .details-container p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 }
 

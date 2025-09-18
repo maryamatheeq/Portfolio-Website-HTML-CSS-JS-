@@ -111,6 +111,28 @@
     .giphy-gif {
         max-width: 150px; /* Further reduce for very small screens */
     }
+    
+    .details-container {
+        max-width: 250px;
+        min-height: 120px;
+        padding: 0.8rem;
+    }
+    
+    .details-container img {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0.6rem;
+    }
+    
+    .details-container h2 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .details-container p {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
 }
 
 
